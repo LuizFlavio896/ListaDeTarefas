@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="73dp"
+    android:background="#F6F6F6"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/txtTituloT"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="primeira tarefa"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtDataT"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:text="11/11/2024" />
+
+    <CheckBox
+        android:id="@+id/checkBoxT"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="CheckBox" />
+
+    <ImageButton
+        android:id="@+id/imageButtonEditT"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_gravity="clip_vertical"
+        android:layout_weight="1"
+        app:srcCompat="@android:drawable/ic_menu_edit"/>
+
+
+    <ImageButton
+        android:id="@+id/imageButtonDeleteT"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_gravity="clip_horizontal"
+        android:layout_weight="1"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+</LinearLayout>

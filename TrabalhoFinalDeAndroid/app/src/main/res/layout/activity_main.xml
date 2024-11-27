@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#CDDC39"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="Lista de Tarefas"
+        android:textSize="34sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:background="#CCE0DF">
+
+        <LinearLayout
+            android:id="@+id/containerTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:foregroundTint="#F6F6F6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txTitulo"
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="primeira tarefa"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textData"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:text="11/11/2024" />
+
+
+
+                <CheckBox
+                    android:id="@+id/checBox"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="CheckBox" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:layout_gravity="clip_vertical"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    app:srcCompat="@android:drawable/ic_menu_edit"
+                    tools:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_gravity="clip_horizontal"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:drawable/ic_menu_delete" />
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="492dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btAdicionar"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_gravity="right"
+        android:backgroundTint="#98BFAE"
+        android:text="+"
+        android:textSize="48sp" />
+
+</LinearLayout>
